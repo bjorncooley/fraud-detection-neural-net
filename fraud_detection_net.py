@@ -3,8 +3,6 @@ import pandas
 from keras.callbacks import ModelCheckpoint
 from keras.models import Sequential
 from keras.layers import Dense
-from keras.wrappers.scikit_learn import KerasClassifier
-from sklearn.model_selection import cross_val_score
 
 seed = 7
 numpy.random.seed(seed)
