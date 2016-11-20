@@ -21,4 +21,4 @@ filepath = "weights.best.hdf5"
 checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 callbacks_list = [checkpoint]
 
-model.fit(X, Y, validation_split=0.33, nb_epoch=10, batch_size=2, callbacks=callbacks_list, verbose=1)
+model.fit(X, Y, validation_split=0.33, nb_epoch=50, batch_size=5, callbacks=callbacks_list, verbose=1)
